@@ -16,8 +16,8 @@ class Student{
     
     $sql_query = "SELECT * FROM $this->table_name";
       $news_obj = $this->conn->prepare($sql_query);
-      $news_obj ->execute();
-      return $news_obj->get_result();
+      $news_obj->execute();
+       return $news_obj->get_result();
   }
 
 } 

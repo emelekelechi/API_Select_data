@@ -8,7 +8,6 @@ include_once ('../model/news_student.php');
 
 $db = new Database();
 $connection = $db->connect();
-
 $student = new Student($connection);
 
 if($_SERVER["REQUEST_METHOD"] === "GET"){
@@ -23,9 +22,9 @@ if($_SERVER["REQUEST_METHOD"] === "GET"){
             "id" => $row['id'],
             "name" => $row['name'],
             "email" => $row['email'],
-            "mobile" => $row['mobile'],
+            // "mobile" => $row['mobile'],
             "status" => $row['status'],
-            "created_at" => date("y-m-d", strototime($row['created_at']))
+            // "created_at" => date("y-m-d", strototime($row['created_at']))
             ));
         }
         
@@ -44,4 +43,4 @@ if($_SERVER["REQUEST_METHOD"] === "GET"){
   ));
 }
 
-?>
+?> 

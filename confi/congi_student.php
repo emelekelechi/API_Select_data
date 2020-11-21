@@ -19,6 +19,7 @@ class Database{
     exit;
   } else{
    //print_r($this->conn);
+   return $this->conn;
   }
   }
 }
