@@ -22,9 +22,9 @@ if($_SERVER["REQUEST_METHOD"] === "GET"){
             "id" => $row['id'],
             "name" => $row['name'],
             "email" => $row['email'],
-            // "mobile" => $row['mobile'],
+            "phone" => $row['phone'],
             "status" => $row['status'],
-            // "created_at" => date("y-m-d", strototime($row['created_at']))
+            "created_at" => date("y-m-d", strtotime($row['created_at']))
             ));
         }
         
